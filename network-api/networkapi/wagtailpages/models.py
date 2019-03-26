@@ -786,11 +786,6 @@ class ParticipatePage2(PrimaryPage):
     ]
 
 
-class PeoplePage(PrimaryPage):
-    parent_page_types = ['Homepage']
-    template = 'wagtailpages/static/people_page.html'
-
-
 class Styleguide(PrimaryPage):
     parent_page_types = ['Homepage']
     template = 'wagtailpages/static/styleguide.html'
@@ -1009,7 +1004,6 @@ class Homepage(FoundationMetadataPageMixin, Page):
 
     subpage_types = [
         'PrimaryPage',
-        'PeoplePage',
         'InitiativesPage',
         'Styleguide',
         'NewsPage',
